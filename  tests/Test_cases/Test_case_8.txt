@@ -1,0 +1,14 @@
+TEST CASE 8 — VERIFY EMPTY CART CHECKOUT
+
+Verify system behavior when checkout is attempted with empty cart.
+
+Test Steps:
+1. Login with valid credentials
+2. Open cart page without adding products
+3. Attempt checkout process
+
+Expected Result:
+- System should handle empty cart properly and fail checkout process with appropriate message.(Checkout page not opened)
+- No invalid order should be created.
+-If SauceDemo allows checkout even with empty cart then it is a "bug" in the application.
+This helps identify actual business behavior and possible functional gaps..
