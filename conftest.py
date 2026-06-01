@@ -2,14 +2,15 @@ import pytest
 from playwright.sync_api import sync_playwright
 
 
-@pytest.fixture
+@pytest.fixture(scope="function")
 def page():
 
     with sync_playwright() as p:
 
         browser = p.chromium.launch(headless=False)
-        page = browser.new_page()
 
+        page = browser.new_page()
+        page.screenshot(path="screenshots/failure.png")
         yield page
 
         browser.close()
