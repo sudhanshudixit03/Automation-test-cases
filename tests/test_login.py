@@ -1,3 +1,4 @@
+#Test case 1 -Valid login
 def test_valid_login(page):
 
     page.goto("https://www.saucedemo.com/")
@@ -15,7 +16,7 @@ def test_valid_login(page):
     assert actual == expected
 
 
-
+#Test case 2 -Invalid login
 def test_invalid_login(page):
 
     page.goto("https://www.saucedemo.com/")
