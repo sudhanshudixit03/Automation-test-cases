@@ -6,8 +6,13 @@ class LoginPage:
 
     def login(self, username, password):
 
-        self.page.fill("#user-name", username)
+        self.page.fill("#user-name", "standard_user")
 
-        self.page.fill("#password", password)
+        self.page.fill("#password", "secret_sauce")
 
         self.page.click("#login-button")
+
+
+
+
+
