@@ -11,6 +11,7 @@ def test_add_single_product(page: Page):
     # validation
     assert page.locator("#shopping_cart_container").inner_text() == "1"
 
+
 # Test Case 4 - Add Multiple Products
 def test_add_multiple_products(page: Page):
 
@@ -51,3 +52,4 @@ def test_sort_low_to_high(page: Page):
 
     # Take screenshot
     page.screenshot(path="Screenshots/product_sorting.png")
+

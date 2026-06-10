@@ -1,4 +1,5 @@
 
+
 #Test Case 7  -Checkout with product in cart
 def test_checkout(page):
     # ADD TO CART
@@ -22,6 +23,7 @@ def test_checkout(page):
 
     # validation
     assert page.locator(".complete-header").inner_text() == "Thank you for your order!"
+
 
 
 #Test Case 8 -Checkout empty cart
