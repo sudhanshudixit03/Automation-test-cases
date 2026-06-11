@@ -1,3 +1,5 @@
+
+
 from playwright.sync_api import Page
 
 
@@ -21,6 +23,7 @@ def test_add_multiple_products(page: Page):
 
     # validation
     assert page.locator("#shopping_cart_container").inner_text() == "3"
+    page.screenshot(path="Screenshots/multiple.png")
 
 
 # Test Case 5 - Remove Product
