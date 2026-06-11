@@ -24,14 +24,14 @@ playwright_Automation_Demo/
 │
 
 │
-├── Test_code
+├── tests
 │
 │
 │
 ├── Screenshots
 │
 │
-└── README.md
+└── requirement.txt
 
 ## Initially, I created manual test cases covering major business functionalities like:
 
